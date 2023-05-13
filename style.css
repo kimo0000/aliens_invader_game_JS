@@ -1,0 +1,81 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3 {
+    margin: 25px 0 0;
+}
+
+.container {
+    width: 302px;
+    height: 302px;
+    border: 1px solid #000;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#start {
+    padding: 5px 8px;
+    margin: 15px auto 0;
+    display: block;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: #f50;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 2px #f80;
+    transform: translateY(0px);
+    transition: .3s;
+}
+
+#start:hover {
+    background-color: greenyellow;
+    color: #000;
+}
+
+#start:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 2px #f80;
+}
+
+.container .square {
+    width: 20px;
+    height: 20px;
+}
+
+.invader {
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.shooter {
+    background-color: red;
+}
+
+.lazer {
+    background-color: yellowgreen;
+    border-radius: 50%;
+}
+
+.boom {
+    background-color: #fff;
+    display: none;
+}
